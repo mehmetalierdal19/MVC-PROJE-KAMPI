@@ -1,0 +1,35 @@
+﻿@model EntityLayer.Concrete.About
+
+<button class="btn btn-primary mt-3" data-toggle="modal" data-target="#Modal1">Yeni Hakkımızda Yazı Girişi</button>
+
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Hakkımızda</h2>
+            </div>
+            @using (Html.BeginForm("AddAbout", "About", FormMethod.Post))
+            {
+                <div class="form-group mx-3 my-auto">
+                    @Html.Label("Hakkımızda Metin 1")
+                    @Html.TextAreaFor(x => x.AboutDetails1, new { @class = "form-control" })
+                    <br />
+
+                    @Html.Label("Hakkımızda Metin 2")
+                    @Html.TextAreaFor(x => x.AboutDetails2, new { @class = "form-control" })
+                    <br />
+
+                    @Html.Label("Hakkımızda Görsel 1")
+                    @Html.TextBoxFor(x => x.AboutImage1, new { @class = "form-control" })
+                    <br />
+
+                    @Html.Label("Hakkımızda Görsel 2")
+                    @Html.TextBoxFor(x => x.AboutImage2, new { @class = "form-control" })
+                    <br />
+
+                    <button class="btn btn-success mb-3">Kaydet</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
