@@ -101,6 +101,14 @@
     <Compile Include="Migrations\202305311316134_mig_add_message.designer.cs">
       <DependentUpon>202305311316134_mig_add_message.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306070730189_mig_add_contactdate.cs" />
+    <Compile Include="Migrations\202306070730189_mig_add_contactdate.designer.cs">
+      <DependentUpon>202306070730189_mig_add_contactdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306071202451_mig_add_imagefile.cs" />
+    <Compile Include="Migrations\202306071202451_mig_add_imagefile.designer.cs">
+      <DependentUpon>202306071202451_mig_add_imagefile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -138,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305311316134_mig_add_message.resx">
       <DependentUpon>202305311316134_mig_add_message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306070730189_mig_add_contactdate.resx">
+      <DependentUpon>202306070730189_mig_add_contactdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306071202451_mig_add_imagefile.resx">
+      <DependentUpon>202306071202451_mig_add_imagefile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
